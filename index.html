@@ -1,76 +1,172 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nice Webpage</title>
+  <meta name="description" content="jyx66626 的个人主页：关于我、兴趣、项目、教育经历与联系方式。">
+  <title>jyx66626 | 个人主页</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
   <header class="navbar">
-      <div class="logo">MySite</div>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+    <a class="logo" href="#home" aria-label="jyx66626，返回首页">jyx66626</a>
+    <nav aria-label="主导航">
+      <button class="nav-toggle" type="button" aria-controls="nav-links" aria-expanded="false" hidden>展开导航</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">关于我</a></li>
+        <li><a href="#interests">兴趣</a></li>
+        <li><a href="#projects">项目</a></li>
+        <li><a href="#education">教育经历</a></li>
+        <li><a href="#contact">联系</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section id="home" class="hero">
+  <main id="main" tabindex="-1">
+    <section id="home" class="hero" aria-labelledby="home-title">
       <div class="hero-content">
-        <h1>Welcome to My Site</h1>
-        <p>Explore the amazing features we offer</p>
-        <a href="#about" class="btn">Get Started</a>
+        <p class="eyebrow">欢迎来到我的个人主页</p>
+        <h1 id="home-title">你好，我是 jyx66626</h1>
+        <p>记录学习、项目与探索。</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn">查看项目</a>
+          <a href="#contact" class="btn btn-outline">联系我</a>
+        </div>
       </div>
-  </section>
+    </section>
 
-  <section id="about" class="section about">
+    <section id="about" class="section section-muted" aria-labelledby="about-title">
       <div class="container">
-        <h2>About Us</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet facilisis lorem. Curabitur nec feugiat neque, vel finibus nulla.</p>
-      </div>
-  </section>
-
-  <section id="features" class="section features">
-      <div class="container">
-        <h2>Features</h2>
-        <div class="cards">
-          <div class="card">
-            <h3>Fast</h3>
-            <p>Optimized for speed with modern design.</p>
-          </div>
-          <div class="card">
-            <h3>Responsive</h3>
-            <p>Looks great on any device, big or small.</p>
-          </div>
-          <div class="card">
-            <h3>Modern</h3>
-            <p>Uses modern web technologies.</p>
+        <h2 id="about-title">关于我 <span lang="en">About</span></h2>
+        <div class="profile">
+          <div class="avatar" aria-hidden="true">J</div>
+          <div class="bio">
+            <h3>jyx66626</h3>
+            <p>欢迎来到我的个人主页。这里用于介绍我的背景、兴趣、项目与学习经历。</p>
+            <!-- 用本人确认的信息替换以下占位内容，勿填入未经确认的经历。 -->
+            <dl class="details">
+              <div><dt>个人背景</dt><dd>待补充：身份、专业或学习领域。</dd></div>
+              <div><dt>关注方向</dt><dd>待补充：正在关注的技术或研究方向。</dd></div>
+              <div><dt>近期计划</dt><dd>待补充：正在学习或构建的内容。</dd></div>
+            </dl>
           </div>
         </div>
       </div>
-  </section>
+    </section>
 
-  <section id="contact" class="section contact">
-    <div class="container">
-        <h2>Contact Us</h2>
-        <form class="contact-form">
-          <input type="text" placeholder="Name" required>
-          <input type="email" placeholder="Email" required>
-          <textarea placeholder="Message" rows="4" required></textarea>
-          <button type="submit" class="btn">Send</button>
-        </form>
-    </div>
-  </section>
+    <section id="interests" class="section" aria-labelledby="interests-title">
+      <div class="container">
+        <h2 id="interests-title">兴趣 <span lang="en">Interests</span></h2>
+        <div class="cards">
+          <article class="card">
+            <h3>兴趣方向待补充</h3>
+            <p>待补充：一项真实兴趣，以及具体关注的主题、日常实践或近期收获。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section section-muted" aria-labelledby="projects-title">
+      <div class="container">
+        <h2 id="projects-title">项目 <span lang="en">Projects</span></h2>
+        <div class="cards">
+          <article class="card">
+            <h3>项目整理中</h3>
+            <p>项目名称与详情待补充。</p>
+            <dl class="details">
+              <div><dt>项目目标</dt><dd>待补充：解决的问题与适用场景。</dd></div>
+              <div><dt>我的贡献</dt><dd>待补充：承担的职责与具体实现。</dd></div>
+              <div><dt>技术栈</dt><dd>待补充：实际使用的语言、框架与工具。</dd></div>
+              <div><dt>成果</dt><dd>待补充：可验证的结果或学习收获。</dd></div>
+            </dl>
+            <!-- 仅在确认真实 URL 后添加源码与演示链接，不使用 href="#"。 -->
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section" aria-labelledby="education-title">
+      <div class="container">
+        <h2 id="education-title">教育经历 <span lang="en">Education</span></h2>
+        <article class="card education-item">
+          <h3>教育信息待补充</h3>
+          <dl class="details">
+            <div><dt>学校</dt><dd>待补充</dd></div>
+            <div><dt>专业 / 学位</dt><dd>待补充</dd></div>
+            <div><dt>起止时间</dt><dd>待补充</dd></div>
+            <div><dt>学习内容</dt><dd>待补充：相关课程或学习方向。</dd></div>
+          </dl>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-muted" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 id="contact-title">联系我 <span lang="en">Contact</span></h2>
+        <p>欢迎围绕项目与学习交流，可通过 GitHub 访问我的公开主页及仓库。</p>
+        <div class="contact-info">
+          <a href="https://github.com/jyx66626" target="_blank" rel="noopener noreferrer">GitHub · jyx66626（新窗口打开）</a>
+        </div>
+        <p class="muted">邮箱与 LinkedIn 暂未公开。</p>
+        <!-- 确认真实邮箱后添加 mailto: 链接；确认 LinkedIn 个人 URL 后再展示对应入口。 -->
+      </div>
+    </section>
+  </main>
 
   <footer>
-    <div class="container">
-      <p>&copy; 2024 MySite. All rights reserved.</p>
-    </div>
+    <div class="container"><p>&copy; <span id="year">2026</span> jyx66626</p></div>
   </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const links = document.querySelector('#nav-links');
+    const mobile = window.matchMedia('(max-width: 768px)');
+
+    function setMenu(open) {
+      const expanded = mobile.matches && open;
+      toggle.setAttribute('aria-expanded', String(expanded));
+      toggle.textContent = expanded ? '收起导航' : '展开导航';
+      links.hidden = mobile.matches && !expanded;
+    }
+
+    function syncNavigation() {
+      // 在隐藏包含当前焦点的控件之前，将焦点移到可见位置。
+      if (mobile.matches && links.contains(document.activeElement)) {
+        toggle.hidden = false;
+        toggle.focus();
+      } else if (!mobile.matches && document.activeElement === toggle) {
+        links.hidden = false;
+        links.querySelector('a').focus();
+      }
+      toggle.hidden = !mobile.matches;
+      setMenu(false);
+    }
+
+    toggle.addEventListener('click', () => {
+      setMenu(toggle.getAttribute('aria-expanded') !== 'true');
+    });
+    links.addEventListener('click', (event) => {
+      const link = event.target.closest('a');
+      if (!link || !mobile.matches) return;
+      setMenu(false);
+      const heading = document.querySelector(link.hash + ' h2');
+      if (heading) {
+        heading.setAttribute('tabindex', '-1');
+        heading.focus({ preventScroll: true });
+      }
+    });
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
+        setMenu(false);
+        toggle.focus();
+      }
+    });
+    mobile.addEventListener('change', syncNavigation);
+    syncNavigation();
+    document.documentElement.classList.add('nav-enhanced');
+    document.querySelector('#year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
