@@ -1,6 +1,6 @@
 # A Quiet Space
 
-An anonymous, static front page. Plain HTML and CSS, no JavaScript shipped to visitors, no build step, analytics, external font requests, or backend.
+A minimal, static front page with an explicitly approved GitHub profile link inside a personal-introduction section whose biography text remains blank. Plain HTML and CSS, no JavaScript shipped to visitors, no build step, analytics, external font requests, or backend.
 
 ## Local preview
 
@@ -20,7 +20,7 @@ The 404 page uses root-relative URLs because this site targets a Pages user-site
 
 ## Design
 
-Paper `#f6f3eb`, ink `#30372f`, secondary text `#697064`, moss `#4c654d`, rules `#d9d8cc`. The layout uses a reading column with marginal notes, quiet rules, and one original botanical line drawing. There are no unpublished section links or fabricated entries.
+Paper `#f6f3eb`, ink `#30372f`, secondary text `#697064`, moss `#4c654d`, rules `#d9d8cc`. The layout uses a reading column with marginal notes, quiet rules, and one original botanical line drawing. Navigation links to the existing beginning, current-status, and personal-introduction sections. The approved GitHub profile link appears only inside the personal-introduction section; biography text remains blank, with no fabricated entries.
 
 The direction draws on the editorial rhythm and digital garden idea at [Maggie Appleton](https://maggieappleton.com/), the clear developer-homepage hierarchy at [Anthony Fu](https://antfu.me/), and the restrained details at [Paco Coursey](https://paco.me/). [Jacky Zhao](https://jzhao.xyz/) is a reference for future garden organization. No page, illustration, or visual asset is copied.
 
@@ -45,4 +45,4 @@ tools/preview.mjs        Local-only allowlisted preview server
 
 The page uses landmarks, one H1, named sections, language annotations, a skip link, visible keyboard focus, and a native keyboard-operable details disclosure. Motion is limited to link feedback; `prefers-reduced-motion: reduce` removes transitions and smooth scrolling. No content depends on JavaScript or motion.
 
-The page is intentionally anonymous, including metadata and the error page. Do not add identity information, contact links, hidden personal data, or empty future sections without explicit approval. `noindex` requests search-engine exclusion; it is not access control. Historical commits and host-provided error pages are outside the website source's privacy controls.
+Metadata and the error page remain anonymous. The owner explicitly approved the GitHub profile link and the blank personal-introduction section. Do not add a biography, contact details, other identity information, or hidden personal data without approval. `noindex` requests search-engine exclusion; it is not access control. Historical commits and host-provided error pages are outside the website source's privacy controls.
